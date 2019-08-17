@@ -25,13 +25,15 @@ class Scraper
     profile = {}
     binding.pry
     
-    #social info scrape
-    #doc.css(".social-icon-container a").attribute("href").value.each do |link|
-    #  case
-    #  when link.include?("twitter.com")
-    #    profile[:twitter] = link
-    #  end
-    #end
+    social info scrape
+    doc.css(".social-icon-container a").attribute("href").value.each do |link|
+      case
+      when link.include?("twitter.com")
+        profile[:twitter] = link
+      end
+    end
+    
+    profile
     
     #twitter
     #linkedin
