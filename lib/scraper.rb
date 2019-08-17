@@ -31,7 +31,12 @@ class Scraper
       case
       when link.include?("twitter.com")
         profile[:twitter] = link
-      when link.include?()
+      when link.include?("linkedin.com")
+        profile[:linkedin] = link
+      when link.include?("github.com")
+        profile[:github] = link
+      when link.include?("learn.co")
+        profile[:blog] = link
       end
     end
     binding.pry
