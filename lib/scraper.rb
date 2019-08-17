@@ -23,7 +23,7 @@ class Scraper
     html = open(profile_url)
     doc = Nokogiri::HTML(html)
     profile = {}
-    binding.pry
+    
     
     social info scrape
     doc.css(".social-icon-container a").attribute("href").value.each do |link|
@@ -32,7 +32,7 @@ class Scraper
         profile[:twitter] = link
       end
     end
-    
+    binding.pry
     profile
     
     #twitter
