@@ -12,7 +12,7 @@ class Scraper
     profiles = {}
     #name .css(".student-name").text
     #location .css(".student-location").text
-    #url 
+    #url .css("a").attribute("href").value
   end
 
   def self.scrape_profile_page(profile_url)
