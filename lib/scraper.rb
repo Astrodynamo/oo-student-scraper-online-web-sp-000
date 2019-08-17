@@ -12,7 +12,8 @@ class Scraper
     profiles = []
     doc.css(".student-card").each do |card|
       student = {}
-      student[name:] = 
+      student[name:] = card.css(".student-name").text
+      student[location:] = 
     end
     #name .css(".student-name").text
     #location .css(".student-location").text
