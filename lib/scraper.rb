@@ -10,7 +10,7 @@ class Scraper
     cards  = doc.css(".student-card")
     binding.pry
     profiles = {}
-    
+    #name .css(".student-name").text
     
   end
 
