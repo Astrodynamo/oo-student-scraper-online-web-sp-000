@@ -41,7 +41,10 @@ class Scraper
     end
     
     #quote scrape
-    profile[:profile_quote] = doc.css(".profile_quote")
+    profile[:profile_quote] = doc.css(".profile-quote").text
+    
+    #bio scrape
+    profile[:bio] = doc.css("")
     
     binding.pry
     profile
