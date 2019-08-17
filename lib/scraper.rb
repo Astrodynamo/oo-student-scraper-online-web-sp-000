@@ -35,7 +35,7 @@ class Scraper
         profile[:linkedin] = link
       when link.include?("github.com")
         profile[:github] = link
-      when link.include?("learn.co") || !link.include?("https")
+      when link.include?("learn.co") || !link.include?("https") #cheap, targeted solution for custom blog test... fix this
         profile[:blog] = link
       end
     end
@@ -50,5 +50,3 @@ class Scraper
   end
 
 end
-
-Scraper.scrape_profile_page("https://learn-co-curriculum.github.io/student-scraper-test-page/students/ryan-johnson.html")
