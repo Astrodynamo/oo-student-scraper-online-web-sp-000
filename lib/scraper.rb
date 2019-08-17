@@ -24,7 +24,8 @@ class Scraper
     doc = Nokogiri::HTML(html)
     profile = {}
     
-    
+    #social info scrape
+    doc.css("")
     
     #twitter
     #linkedin
