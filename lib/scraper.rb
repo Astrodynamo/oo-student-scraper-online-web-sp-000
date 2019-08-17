@@ -12,6 +12,7 @@ class Scraper
     profiles = []
     doc.css(".student-card").each do |card|
       student = {}
+      binding.pry
       student[name:] = card.css(".student-name").text
       student[location:] = card.css(".student-location").text
       student[profile_url:] = card.css("a").attribute("href").value
