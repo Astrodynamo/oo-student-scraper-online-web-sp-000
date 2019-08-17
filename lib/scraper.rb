@@ -14,7 +14,8 @@ class Scraper
       student = {}
       student[name:] = card.css(".student-name").text
       student[location:] = card.css(".student-location").text
-      student[profile_url:] = card
+      student[profile_url:] = card.css("a").attribute("href").value
+      profiles << student
     end
     #name .css(".student-name").text
     #location .css(".student-location").text
