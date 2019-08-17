@@ -46,15 +46,7 @@ class Scraper
     #bio scrape
     profile[:bio] = doc.css(".bio-block p").text
     
-    binding.pry
     profile
-    
-    #twitter
-    #linkedin
-    #github
-    #blog
-    #profile_quote
-    #bio
   end
 
 end
