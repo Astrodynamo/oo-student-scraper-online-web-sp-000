@@ -19,6 +19,7 @@ class Scraper
     #name .css(".student-name").text
     #location .css(".student-location").text
     #url .css("a").attribute("href").value
+    profiles
   end
 
   def self.scrape_profile_page(profile_url)
