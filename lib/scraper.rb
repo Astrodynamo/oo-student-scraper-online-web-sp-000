@@ -44,4 +44,4 @@ class Scraper
 
 end
 
-Scraper.scrape_profile_page()
+Scraper.scrape_profile_page("https://learn-co-curriculum.github.io/student-scraper-test-page/students/ryan-johnson.html")
