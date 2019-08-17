@@ -27,8 +27,11 @@ class Scraper
     #social info scrape
     doc.css(".social-icon-container").each do |icon|
       link = icon.css("a").attribute("href").value
-      case link
-      when include?("")
+      case
+      when link.include?("twitter.com")
+        profile[:twitter] = link
+        binding.pry
+      end
     end
     
     #twitter
@@ -41,4 +44,4 @@ class Scraper
 
 end
 
-Scraper.scrape_index_page("https://learn-co-curriculum.github.io/student-scraper-test-page/index.html")
+Scraper.scrape_profile_page()
