@@ -31,6 +31,7 @@ class Scraper
       case
       when link.include?("twitter.com")
         profile[:twitter] = link
+      when link.include?()
       end
     end
     binding.pry
