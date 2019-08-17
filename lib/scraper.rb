@@ -19,4 +19,3 @@ class Scraper
 
 end
 
-scrape_index_page("https://learn-co-curriculum.github.io/student-scraper-test-page/index.html")
