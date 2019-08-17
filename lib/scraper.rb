@@ -25,7 +25,9 @@ class Scraper
     profile = {}
     
     #social info scrape
-    doc.css("")
+    doc.css(".social-icon-container").each do |icon|
+      
+    end
     
     #twitter
     #linkedin
