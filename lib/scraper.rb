@@ -26,7 +26,9 @@ class Scraper
     
     #social info scrape
     doc.css(".social-icon-container").each do |icon|
-      
+      link = icon.css("a").attribute("href").value
+      case link
+      when include?("")
     end
     
     #twitter
