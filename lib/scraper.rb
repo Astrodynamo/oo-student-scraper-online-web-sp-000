@@ -39,6 +39,10 @@ class Scraper
         profile[:blog] = link
       end
     end
+    
+    #quote scrape
+    profile[:profile_quote] = doc.css(".profile_quote")
+    
     binding.pry
     profile
     
