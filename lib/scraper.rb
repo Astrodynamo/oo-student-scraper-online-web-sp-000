@@ -16,9 +16,6 @@ class Scraper
       student[:profile_url] = card.css("a").attribute("href").value
       profiles << student
     end
-    #name .css(".student-name").text
-    #location .css(".student-location").text
-    #url .css("a").attribute("href").value
     profiles
   end
 
